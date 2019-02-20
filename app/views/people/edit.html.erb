@@ -1,0 +1,25 @@
+<h1>Fix your People</h1>
+
+<%= form_for @person do |n| %>
+  <h3><%= n.label :name %>
+  <%= n.text_field :name %><h3>
+
+  <h3><%= n.label :age %>
+  <%= n.text_field :age %><h3>
+
+  <h3><%= n.label :hair_color %>
+  <%= n.text_field :hair_color %><h3>
+
+  <h3><%= n.label :eye_color %>
+  <%= n.text_field :eye_color %><h3>
+
+  <h3><%= n.label :gender %>
+  <%= n.text_field :gender %><h3>
+
+  <h3><%= n.label :alive %>
+  <%= n.text_field :alive %><h3>
+
+  <%= n.submit %>
+
+  <% end %>
+

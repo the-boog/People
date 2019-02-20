@@ -1,0 +1,9 @@
+<h1>People</h1>
+<p>Welcome to the People Page</p>
+<h3><%= link_to 'Create a New People', new_person_path %></h3>
+<% @people.each do |person| %>
+  <h1><%= person.name %> <h1>
+  <h3><%= link_to 'Show Person', person_path(person) %></h3>
+  <h3><%= link_to 'Edit', edit_person_path(person) %></h3>
+  <h3><%= link_to 'Anihilate Person', person, method: :delete %></h3>
+<% end %>
